@@ -88,7 +88,7 @@ const Contact = () => {
               </p>
               
               <a 
-                href="https://wa.me/2347032416409" 
+                href="https://wa.me/2347032415409" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-gold w-full py-5 flex items-center justify-center gap-3 text-lg"

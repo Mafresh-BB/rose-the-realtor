@@ -37,7 +37,7 @@ const Hero = () => {
               View Listings <ArrowRight size={20} />
             </a>
             <a 
-              href="https://wa.me/2347032416409" 
+              href="https://wa.me/2347032415409" 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn-outline-gold flex items-center justify-center gap-2"

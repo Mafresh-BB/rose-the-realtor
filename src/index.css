@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #D4AF37;
+  --color-gold-light: #F9E79F;
+  --color-gold-dark: #B8860B;
+  --color-black-card: #121212;
+  --color-black-bg: #000000;
+  
+  --font-outfit: "Outfit", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-black-bg text-white font-inter antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-outfit;
+  }
+}
+
+@layer components {
+  .btn-gold {
+    @apply bg-gold hover:bg-gold-dark text-black font-semibold px-8 py-3 rounded-md transition-all duration-300 transform hover:scale-105 inline-block text-center;
+  }
+
+  .btn-outline-gold {
+    @apply border-2 border-gold text-gold hover:bg-gold hover:text-black font-semibold px-8 py-3 rounded-md transition-all duration-300 transform hover:scale-105 inline-block text-center;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-5xl font-bold text-center mb-12;
+  }
+
+  .gold-text {
+    @apply text-gold;
+  }
+
+  .gold-gradient {
+    @apply bg-gradient-to-r from-gold to-gold-light bg-clip-text text-transparent;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:-translate-y-2;
+  }
+}
